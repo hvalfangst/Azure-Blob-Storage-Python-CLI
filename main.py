@@ -2,7 +2,6 @@ from azure.storage.blob import BlobServiceClient
 
 connection_string = "PLACEHOLDER"
 
-
 def get_blob_service_client():
     return BlobServiceClient.from_connection_string(connection_string)
 

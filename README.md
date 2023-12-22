@@ -11,11 +11,10 @@ Command Line Interface application for manipulating Blob Storage using Azure SDK
 
 ## Startup
 
-The script "up" provisions Azure resources:
+The script "up" provisions Azure resources either via Terraform or Bicep:
 ```
-1. terraform init
-2. terraform plan
-3. terraform apply
+sh up.sh terraform -> init, plan & apply
+sh up.sh bicep -> compiles & executes ARM template
 ```
 
 ## Run
@@ -28,7 +27,8 @@ python main.py
 
 ## Shutdown
 
-The script "down" removes provisioned Azure resources:
+The script "down" removes provisioned Azure resources, either via Terraform or Bicep:
 ```
-terraform destroy
+sh down.sh terraform -> terraform destroy
+sh down.sh az -> az group delete
 ```
