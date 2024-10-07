@@ -1,0 +1,12 @@
+def print_menu():
+    print("\n\n\nAzure Storage Blobs:")
+    print("------------------------------------------------------------")
+    print("1. Create Container")
+    print("2. List Containers")
+    print("3. Delete Container")
+    print("4. Upload Blob")
+    print("5. List Blobs")
+    print("6. Download Blob")
+    print("7. Delete Blob")
+    print("0. Exit")
+    print("------------------------------------------------------------")
